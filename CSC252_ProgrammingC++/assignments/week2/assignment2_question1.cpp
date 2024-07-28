@@ -16,7 +16,7 @@ class Soda {
             height = h;
         }
 
-        string get_volume()
+        string getVolume()
         {
             stringstream ss;
             double volume = M_PI * radius * radius * height;
@@ -24,7 +24,7 @@ class Soda {
             return ss.str();
         }
 
-        string get_surfArea()
+        string getSurfArea()
         {
             stringstream ss;
             double left_side = 2 * M_PI * radius * height;
@@ -38,7 +38,7 @@ class Soda {
 int main ()
 {
     Soda pepsi = Soda(3, 9);
-    cout << pepsi.get_volume() << endl;
-    cout << pepsi.get_surfArea() << endl;
+    cout << pepsi.getVolume() << endl;
+    cout << pepsi.getSurfArea() << endl;
     return 0;
 }
